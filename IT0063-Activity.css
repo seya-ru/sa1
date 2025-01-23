@@ -1,0 +1,117 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    transition: background-color 0.3s, color 0.3s;
+    background-color: #fff;
+    color: #333;
+}
+
+.container {
+    display: flex;
+    width: 90%;
+    max-width: 1200px;
+    padding: 20px;
+    justify-content: space-between;
+}
+
+.left-side {
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+#theme-toggle {
+    background-color: #333;
+    color: #fff;
+    padding: 12px 25px;
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+#theme-toggle:hover {
+    background-color: #555;
+    transform: scale(1.05);
+}
+
+.right-side {
+    width: 75%;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.profile {
+    text-align: center; /* Ensure text is centered */
+    margin-bottom: 30px;
+}
+
+.profile-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+    border: 5px solid #ddd;
+}
+
+h1, h2, h3, p, ul li, p strong {
+    color: #333;
+}
+
+ul {
+    list-style-type: none;
+    margin-bottom: 15px;
+}
+
+.education-item, .experience-item {
+    margin-bottom: 20px;
+}
+
+.education-item p, .experience-item p {
+    font-size: 1.1rem;
+}
+
+/* Pink & Green Theme */
+.pink-green-theme {
+    background-color: #c4e8c5;
+}
+
+.pink-green-theme .right-side {
+    background-color: #eaf8e6;
+}
+
+.pink-green-theme #theme-toggle {
+    background-color: #ff69b4;
+    color: #fff;
+}
+
+.pink-green-theme #theme-toggle:hover {
+    background-color: #ff1493;
+}
+
+.pink-green-theme h1, .pink-green-theme h2, .pink-green-theme h3, 
+.pink-green-theme p, .pink-green-theme ul li, .pink-green-theme p strong {
+    color: #3b7045;
+}
+
+.pink-green-theme .profile-img {
+    border: 5px solid #ff69b4;
+}
+
+.pink-green-theme .education-item p, .pink-green-theme .experience-item p {
+    color: #3b7045;
+}
+
+.pink-green-theme .right-side {
+    background-color: #f8e6f5;
+    color: #3b7045;
+}
